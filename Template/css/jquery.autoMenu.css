@@ -37,9 +37,9 @@ a:focus{outline:none;}
 .autoMenu ul{
 	line-height: 2;
 	overflow-y: auto; 
-	background: #fff;
-	-webkit-box-shadow:0 0 10px #CCC;  
-  -moz-box-shadow:0 0 10px #CCC;  
+	background: rgba(255, 255, 255, .8);
+	-webkit-box-shadow:0 0 10px #CCC;
+  -moz-box-shadow:0 0 10px #CCC;
   box-shadow:0 0 10px #CCC;
 }
 .autoMenu ul>li.sub{
