@@ -6,9 +6,7 @@ body, div, ul, p, h1, h2, h3, h4, ol, dl, dd, dt, form, input, textarea, select,
 }
 
 * {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box
+    box-sizing: border-box;
 }
 
 li {
@@ -28,19 +26,19 @@ a:focus{outline:none;}
 
 /*-------main---------*/
 .autoMenu{
-	position: fixed;
-	bottom: 10%;
-	left: 1%;
+	/*position: fixed;*/
+	/*bottom: 10%;*/
+	/*left: 1%;*/
 	z-index: 1;
 	text-align: left;
 }
 .autoMenu ul{
 	line-height: 2;
 	overflow-y: auto; 
-	background: rgba(255, 255, 255, .8);
-	-webkit-box-shadow:0 0 10px #CCC;
-  -moz-box-shadow:0 0 10px #CCC;
-  box-shadow:0 0 10px #CCC;
+	background: rgba(255, 255, 255, .0);
+	/*-webkit-box-shadow:0 0 10px #CCC;*/
+  /*-moz-box-shadow:0 0 10px #CCC;*/
+  /*box-shadow:0 0 10px #CCC;*/
 }
 .autoMenu ul>li.sub{
 	padding-left: 20px;
@@ -53,7 +51,7 @@ a:focus{outline:none;}
 }
 
 .btn-box{
-    display: inline-block;
+	display: none;
     width: 40px;
     height: 40px;
     text-decoration: none;

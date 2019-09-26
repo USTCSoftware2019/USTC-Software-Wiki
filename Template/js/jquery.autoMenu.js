@@ -46,7 +46,7 @@
                 var height = typeof opts.height === 'number' && opts.height;
                 var padding = typeof opts.padding === 'number' && opts.padding;
                 that.$element.width(width+padding*2);
-                var html = '<ul style="height: '+ height +'px;padding:' + padding + 'px">';
+                var html = '<ul style="height: '+ height +'px;">';
                 var num = 0;
                 $('*').each(function(){
                     var _this = $(this);
@@ -152,8 +152,8 @@
     $.fn.autoMenu.defaults = {
         levelOne : 'h3', //一级标题
         levelTwo : 'h4',  //二级标题（暂不支持更多级）
-        width : 200, //容器宽度
-        height : 400, //容器高度
+        width : 170, //容器宽度
+        height : 800, //容器高度
         padding: 20, //内部间距
         offTop : 100, //滚动切换导航时离顶部的距离
 
@@ -166,7 +166,9 @@
      */
     $(function () {
         if($('[data-autoMenu]').length>0){
-            new Menu($('[data-autoMenu]'));
+            if($(window).width() > 986){
+                new Menu($('[data-autoMenu]'));
+            }
         }
         
     });
