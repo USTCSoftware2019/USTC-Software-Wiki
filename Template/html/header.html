@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Header</title>
-    <!-- <link rel="stylesheet" href="./css/default.css"> -->
-    <link rel="stylesheet" href="../css/common.css">
-    <style type="text/css">
+</head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="https://2019.igem.org/Template:USTC-Software/css/default?action=raw&ctype=text/css" />
+<link rel="stylesheet" type="text/css" href="https://2019.igem.org/Template:USTC-Software/css/bootstrap?action=raw&ctype=text/css" />
+<script type="text/javascript" src="https://2019.igem.org/Template:USTC-Software/js/jquery?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="https://2019.igem.org/Template:USTC-Software/js/popper?action=raw&ctype=text/javascript"></script>
+<script type="text/javascript" src="https://2019.igem.org/Template:USTC-Software/js/bootstrap?action=raw&ctype=text/javascript"></script>
+<link rel="stylesheet" href="../css/common.css">
+<style type="text/css">
     .header {width: 100%}
     .top_menu {display: flex}
     .logo {padding: 1em}
@@ -51,10 +58,7 @@
     .slide_info li:hover {color: aqua;}
     .slide_info li:hover > a {color: aqua;}
 
-    </style>
-    <script src="../js/jquery.min.js"></script>
-</head>
-<body>
+</style>
     <nav class="header">
         <div class="top_menu">
             <div class="logo">LOGO</div>
@@ -120,6 +124,7 @@
                 <img src="../../File/menu.svg" alt="" srcset="">
             </div>            
         </div>
+
         <div class="slide_menu" id="slide_menu">
             <ul class="slide_menu_item">
                 <li class="slide_team_menu more">TEAM<span></span>
@@ -181,24 +186,12 @@
     </nav>
     <script>
     $('#menu_icon').on('click', function(){
-        console.log('hello')
+        console.log('hello');
         $('#slide_menu').slideToggle(250)
     });
-    $('.slide_team_menu').on('click', function(){
-        $('#team_menu_item').slideToggle(250)
-    })
-    $('.slide_project_menu').on('click', function(){
-        $('#project_menu_item').slideToggle(250)
-    })
-    $('.slide_parts_menu').on('click', function(){
-        $('#parts_menu_item').slideToggle(250)
-    })
-    $('.slide_human_practice_menu').on('click', function(){
-        $('#human_practice_menu_item').slideToggle(250)
-    })
-    $('.slide_awards_menu').on('click', function(){
-        $('#awards_menu_item').slideToggle(250)
-    })
+    $('.slide_menu li.more').on('click', function(){
+        $(this).children('div.slide_info').slideToggle(250);
+    });
     
     </script>
 </body>
