@@ -13,7 +13,6 @@
 <link rel="stylesheet" href="../Template/css/common.css">
 
 <header>
-
     <link rel="stylesheet" type="text/css" href="https://2019.igem.org/Template:USTC-Software/css/default?action=raw&ctype=text/css" />
     <link rel="stylesheet" type="text/css" href="https://2019.igem.org/Template:USTC-Software/css/bootstrap?action=raw&ctype=text/css" />
     <script type="text/javascript" src="https://2019.igem.org/Template:USTC-Software/js/jquery?action=raw&ctype=text/javascript"></script>
@@ -33,6 +32,7 @@
       .menu_list li a:hover {color: #ffd24a; }
       .menu_list > li:hover {color: #ffd24a; cursor: pointer;}
       .menu_item {padding: 1em}
+      .menu_item div {z-index: 1000; background: rgba(255, 255, 255, .5);}
       .menu_icon {display: none}
       .menu_icon > img {width: 2em; height: 2em; padding-top: .75em}
       .more > span {display: inline-block; width: 1em; height: 1em; background-image: url("../File/slide_down.svg"); background-position: -18px; background-size: cover; transform: rotate(-90deg);}
@@ -209,20 +209,113 @@
     </script>
 
 </header>
-<div class="content container">
-  <div class="clock">
-    <img src="../File/clock.gif" alt="">
+<div class="next">
+  <img src="../File/arrow%20down.svg" alt="">
+</div>
+<div class="page1">
+  <div class="imgs">
+    <div class="clock">
+      <img src="../File/clock.gif" alt="">
+    </div>
+    <div class="light">
+      <img src="../File/light.png" alt="">
+    </div>
   </div>
+  <div class="des d-flex justify-content-center flex-column align-items-center">
+    <div class="des1">
+      <h2>USTC PROJECT</h2>
+      <p class="text-gray">Feture 1, Feture 2 and More</p>
+    </div>
+    <div class="des2 mt-4">
+      <a href="https://2019.igem.org/Team:USTC-Software/Description" class="btn btn-primary btn-more">MORE</a>
+    </div>
+  </div>
+</div>
+<div class="page2">
 
+  <footer>
+    <h4 class="text-center mb-2">USTC PROJECT</h4>
+    <p class="text-gray text-center">Some Information</p>
+    <p class="text-center mt-4">Contact Us With: <a href="#">Facebook</a>,
+      <a href="#">Github</a>,
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
 </div>
-<div class="btn-more d-flex justify-content-center align-items-center">
-  <a class="btn btn-primary" href="TEAM/Team.html">KNOW MORE</a>
-</div>
+
+
+<!--<div class="btn-more d-flex justify-content-center align-items-center">-->
+<!--  <a class="btn btn-primary" href="TEAM/Team.html">KNOW MORE</a>-->
+<!--</div>-->
 
 <style>
-  .btn-more {position: fixed; bottom: 10%; width: 100%;}
-  .clock img {border-radius: 50%; position: relative; left: 300px; height: 100px;}
-  body {background: url("../File/Red Appearance.jpg") no-repeat; }
+  footer {position: absolute; bottom: 10vh;width: 80vw;}
+  .page2 {display: none;}
+  .next {position: absolute; bottom: 15px; left: 48vw; cursor: pointer;}
+  .next div {margin-bottom: -15px;}
+  .next img {width: 30px; height: 30px;}
+  .des {position: absolute; left: 20vw; top: 30vh; height: 300px;}
+  p.text-gray {color: #757575;}
+  .btn-more {display: block; width: 150px;}
+  .clock {position: absolute; right: 40vw; top: 22vh;}
+  .clock img {border-radius: 50%; position: relative; left: 300px; height: 120px;}
+  .light {position: absolute; right: 40vw; top: 10vh;}
+  .light img {height: 200px;}
+  body {background: url("../File/WEB.svg") center no-repeat;background-size: cover; width: 100vw; height: 100vh;}
 </style>
+<script>
+  let page1IsShow  = true;
+  let timer = setInterval(function () {
+      if(page1IsShow){
+          $(".next").animate({
+              "opacity": ".2",
+              "bottom": "5px"
+          }, 500, function () {
+              $(this).css("bottom", "15px")
+                  .animate({
+                      "opacity": "1"
+                  }, 500);
+          });
+      }else{
+          $(".next").animate({
+              "opacity": ".2",
+              "bottom": "25px"
+          }, 500, function () {
+              $(this).css("bottom", "15px")
+                  .animate({
+                      "opacity": "1"
+                  }, 500);
+          });
+      }
+
+  }, 1200);
+
+  $(".next").on("click", function () {
+    $(".page1").fadeToggle();
+    $(".page2").fadeToggle();
+    changeBg();
+    changeArrow();
+  });
+  function changeBg(){
+      if(page1IsShow){
+          $("body").css({
+              "background-image": "url(../File/web2.svg)"
+          });
+          page1IsShow = false;
+      }else{
+          $("body").css({
+              "background-image": "url(../File/WEB.svg)"
+          });
+          page1IsShow = true;
+      }
+  }
+  function changeArrow() {
+      if(page1IsShow){
+          $(".next").css("transform", "rotate(0deg)");
+      }else{
+          $(".next").css("transform", "rotate(180deg)");
+      }
+  }
+</script>
 </body>
 </html>
