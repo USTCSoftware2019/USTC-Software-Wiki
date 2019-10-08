@@ -51,7 +51,7 @@ a:focus{outline:none;}
 	color: #ff5370;
 }
 .autoMenu ul>li:hover{
-	background: url('../../File/bookmark.svg') no-repeat;
+	background: url('../../File/T--USTC-Software--bookmark.svg') no-repeat;
 	background-size: 250px;
 	background-position: right;
 	/* opacity: 0.5; */
@@ -61,7 +61,7 @@ a:focus{outline:none;}
 	color: #FFDC5E;
 }
 .autoMenu ul>li.active{
-	background: url('../../File/bookmark.svg') no-repeat;
+	background: url('../../File/T--USTC-Software--bookmark.svg') no-repeat;
 	background-size: 250px;
 	background-position: right;
 }
