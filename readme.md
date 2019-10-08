@@ -67,4 +67,17 @@ action=raw&ctype=text/javascript"></script>
 
 ## Jquery
 
-Jquery 1.11.1已经在igem官方网站中全局引入。
+Jquery 1.11.1已经在igem官方网站中全局引入。但是我们为了使用bootstrap4的最新特性，又重新引入了Jquery 3.x。引入的方式可以看Team文件夹下面的html文件。
+
+### 如何上传以及引入图片及视频
+
+首先访问我们的队伍的Wiki空间**https://2019.igem.org/Team:USTC-Software/Team**，这个时候登陆自己的账户，显示已经登陆进去后，点击**wiki tools**，然后再点击**Upload files**，接着选择自己要上传的文件，注意文件的命名方式（见*上传文件*这一节）。
+
+上传好之后，可以点击**list of files**，它的网址是https://2019.igem.org/Special:ListFiles。在Username里面输入自己的用户名，就可以只查看自己上传的文件了。随便点击一张进去，再次点击图片本身，就可以在浏览器的地址栏出现网址。会出现类似的网址：https://2019.igem.org/wiki/images/e/ee/T--USTC-Software--WEB.svg。图片网址唯一不同的是**e/ee**这个文件夹。
+
+### 关于Wiki的参考文献
+
+参考文献写在每个页面的尾部，不要单独创建一个文件。
+
+
+

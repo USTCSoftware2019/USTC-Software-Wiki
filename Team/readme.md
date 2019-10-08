@@ -26,7 +26,7 @@
 同样需要创建剩下的三个页面`Basic_Part.html`,`Composite_Part`,`Part_Collection`。
 
 ### 框架使用
-在每个页面中我们需要引入一下文件，不管是否用到，因为他们在`header.html`里面被引入了，在本地开发时，需要
+在每个页面中我们需要引入以下文件，不管是否用到，因为他们在`header.html`里面被引入了，在本地开发时，需要
 引入这些css文件来保证上传到IGEM官网上页面显示的一致性。引入的内容包括：
 ```html
 <link rel="stylesheet" type="text/css" href="https://2019.igem.org/Template:USTC-Software/css/default?action=raw&ctype=text/css" />

@@ -5,43 +5,40 @@
 	 style="enable-background:new 0 0 1920 3240;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{opacity:0.64;}
+	.st1{opacity:0.34;}
 	.st2{fill:#248DAA;}
 	.st3{opacity:0.5558;fill:#FFFFFF;enable-background:new    ;}
 	.st4{fill:#4EAFC3;}
 	.st5{fill:#62C8DC;}
 	.st6{fill:#C6F5FF;}
 	.st7{fill:#D4D692;}
-	.st8{fill:#47A5BF;}
+	.st8{opacity:0.63;fill:#47A5BF;}
 	.st9{opacity:0.3112;fill:#28D5E7;enable-background:new    ;}
 	.st10{fill:#FBFDCB;}
-	.st11{opacity:0.6;}
+	.st11{opacity:0.31;}
 	.st12{fill:url(#SVGID_1_);}
 </style>
-<g id="图层_1_1_" vectornator:layerName="鍥惧眰 1">
+<g id="图层_1_1_" vectornator:layerName="闁搞儲鍎抽惇1">
 	<path class="st0" d="M-9.6-9.3h1944.3c2.3,0,4.1,5.4,4.1,12v3226.6c0,6.6-1.8,11.9-4.1,11.9H-9.6c-2.3,0-4.1-5.3-4.1-11.9V2.6
 		C-13.7-4-11.9-9.3-9.6-9.3z"/>
 </g>
-<g id="图层_5" vectornator:layerName="鍥惧眰 5" class="st1">
+<g id="图层_5" vectornator:layerName="闁搞儲鍎抽惇5" class="st1">
 	<path class="st2" d="M-59.5,2279.2l7.7-257.5l2016.1-1.3l-0.9,1341.8H-59.5V2279.2z"/>
 </g>
-<g id="图层_2_1_" vectornator:layerName="鍥惧眰 2">
+<g id="图层_2_1_" vectornator:layerName="闁搞儲鍎抽惇2">
 	<g transform="matrix(1 0 0 1 525.205 836.312)">
-		
-			<image style="display:none;overflow:visible;enable-background:new    ;" width="856" height="685" id="Image" xlink:href="5DE0211B.png"  transform="matrix(1 0 0 1 525.205 836.312)">
-		</image>
 	</g>
 </g>
-<g id="图层_4" vectornator:layerName="鍥惧眰 4">
+<g id="图层_4" vectornator:layerName="闁搞儲鍎抽惇4">
 	<path class="st3" d="M550.9,2491.8l180.8-15.4l555.8,866.7l-1290.3,8.4L550.9,2491.8z"/>
 </g>
-<g id="图层_3" vectornator:layerName="鍥惧眰 3">
+<g id="图层_3" vectornator:layerName="闁搞儲鍎抽惇3">
 	<g>
-		<path class="st4" d="M516.9,2550.1c0-72,58.3-130.3,130.3-130.3c72,0,130.3,58.4,130.3,130.3s-58.3,130.3-130.3,130.3
+		<path class="st4" d="M516.9,2550.1c0-72,58.3-130.3,130.3-130.3s130.3,58.4,130.3,130.3s-58.3,130.3-130.3,130.3
 			C575.3,2680.4,516.9,2622,516.9,2550.1z"/>
 		<path class="st5" d="M530.1,2550.1c0-66,52.4-119.6,117.1-119.6s117.1,53.5,117.1,119.6c0,66-52.4,119.6-117.1,119.6
 			S530.1,2616.1,530.1,2550.1z"/>
-		<path class="st6" d="M537.8,2550.1c0-61.8,49-111.9,109.4-111.9c60.4,0,109.4,50.1,109.4,111.9s-49,111.9-109.4,111.9
+		<path class="st6" d="M537.8,2550.1c0-61.8,49-111.9,109.4-111.9s109.4,50.1,109.4,111.9s-49,111.9-109.4,111.9
 			C586.8,2661.9,537.8,2611.9,537.8,2550.1z"/>
 		<path class="st4" d="M641.4,2427.5h8.4c1.1,0,2.1,1.6,2.1,3.6v240.4c0,2-0.9,3.6-2.1,3.6h-8.4c-1.1,0-2.1-1.6-2.1-3.6V2431
 			C639.3,2429.1,640.2,2427.5,641.4,2427.5z"/>
@@ -49,21 +46,20 @@
 			C767.8,2545,769.4,2545.9,769.4,2547.1z"/>
 	</g>
 </g>
-<g id="图层_7" vectornator:layerName="鍥惧眰 7">
-	<path class="st0" d="M-29.8,1506.1l2128.3,18.5l-131.3,861.7c0,0-188.1,179.8-582.8,143.5c-394.7-36.3-764.8-200.2-993.6-196.5
+<g id="图层_7" vectornator:layerName="闁搞儲鍎抽惇7">
+	<path class="st0" d="M-29.8,1506.1l2128.3,18.5l-131.3,861.7c0,0-188.1,179.8-582.8,143.5s-764.8-200.2-993.6-196.5
 		c-302.6,4.9-412.2,145.2-412.2,145.2L-29.8,1506.1z"/>
 	<path class="st0" d="M2015.7,1694.7l-2052.6-28.5l10.3-502.7c0,0,224-314.3,596.1-306.8c342.1,6.9,358.9,289.2,925.5,268.2
 		c556.5-20.6,612.2-471.9,612.2-471.9L2015.7,1694.7z"/>
 	<path class="st7" d="M1551.5,2176.4l15.1-5.2l95.4,278.6l-15.1,5.2L1551.5,2176.4z"/>
-	<path class="st8" d="M1435.9,2510.7l425.1-129.7l-23.7,95.8l-305.5,93.2L1435.9,2510.7z"/>
-	<path class="st9" d="M1590.6,2245.8l-27.3-69.9c0,0,32.5,6.7,65.3-6.2c32.8-12.9,65.8-45.3,65.8-45.3s15.8,41.7-43,87.6
+	<path class="st8" d="M1435.9,2510.7L1861,2381l-23.7,95.8l-305.5,93.2L1435.9,2510.7z"/>
+	<path class="st9" d="M1590.6,2245.8l-27.3-69.9c0,0,32.5,6.7,65.3-6.2s65.8-45.3,65.8-45.3s15.8,41.7-43,87.6
 		C1619.8,2236.4,1590.6,2245.8,1590.6,2245.8z"/>
-	<path class="st10" d="M1417.3,13.2c0-12.5,6-22.6,13.4-22.6s13.4,10.1,13.4,22.6c0,12.5-6,22.6-13.4,22.6S1417.3,25.6,1417.3,13.2z
-		"/>
+	<path class="st10" d="M1417.3,13.2c0-12.5,6-22.6,13.4-22.6s13.4,10.1,13.4,22.6s-6,22.6-13.4,22.6S1417.3,25.6,1417.3,13.2z"/>
 </g>
-<g id="图层_8" vectornator:layerName="鍥惧眰 8" class="st11">
+<g id="图层_8" vectornator:layerName="闁搞儲鍎抽惇8" class="st11">
 	
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-304.8606" y1="3265.2307" x2="1955.8726" y2="3243.0405" gradientTransform="matrix(2.341330e-02 0.6506 1.7785 -1.044860e-02 -4859.5845 408.4832)">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-2130.0107" y1="4697.7886" x2="130.7225" y2="4675.5981" gradientTransform="matrix(2.340000e-02 0.6506 1.7785 -1.040000e-02 -7364.4912 1610.7095)">
 		<stop  offset="0.2843" style="stop-color:#248DAA"/>
 		<stop  offset="1" style="stop-color:#FFFFFF"/>
 	</linearGradient>
@@ -71,24 +67,12 @@
 		c-86.4-34.4-140.5-83.1-140.5-83.1S637.2,846.2,499.9,870.7c-183.9,32.8-285.7,86-371.2,154.2
 		c-142.2,113.5-196.9,247.9-196.9,247.9l20-1308.5L1938.4-47.4z"/>
 </g>
-<g id="图层_6" vectornator:layerName="鍥惧眰 6">
+<g id="图层_6" vectornator:layerName="闁搞儲鍎抽惇6">
 	<path class="st10" d="M1529,467.5c-20.8,0-40.6,4-59,10.8c2-0.1,4-0.3,6-0.3c63.6,0,115.2,51.6,115.2,115.2
-		c0,63.6-51.6,115.2-115.2,115.2c-58,0-105.9-43-113.9-98.8c-1.4,8.8-2.4,17.9-2.4,27.1c0,93.5,75.8,169.3,169.3,169.3
-		c93.5,0,169.3-75.8,169.3-169.3C1698.3,543.3,1622.5,467.5,1529,467.5z"/>
-	
-		<image style="overflow:visible;enable-background:new    ;" width="560" height="560" xlink:href="5DE02119.png"  transform="matrix(1 0 0 1 1249.41 357.133)">
-	</image>
+		s-51.6,115.2-115.2,115.2c-58,0-105.9-43-113.9-98.8c-1.4,8.8-2.4,17.9-2.4,27.1c0,93.5,75.8,169.3,169.3,169.3
+		s169.3-75.8,169.3-169.3C1698.3,543.3,1622.5,467.5,1529,467.5z"/>
 	<path class="st10" d="M1712.4,829.7l-38.2-20.9l38.2-20.9l20.9-38.2l20.9,38.2l38.2,20.9l-38.2,20.9l-20.9,38.2L1712.4,829.7z"/>
 	<path class="st10" d="M751.2,741.4L713,720.5l38.2-20.9l20.9-38.2l20.9,38.2l38.2,20.9L793,741.4l-20.9,38.2L751.2,741.4z"/>
 	<path class="st10" d="M230.6,607.3l-38.2-20.9l38.2-20.9l20.9-38.2l20.9,38.2l38.2,20.9l-38.2,20.9l-20.9,38.2L230.6,607.3z"/>
-	
-		<image style="overflow:visible;enable-background:new    ;" width="336" height="336" xlink:href="5DE0211F.png"  transform="matrix(1 0 0 1 1565.28 641.127)">
-	</image>
-	
-		<image style="overflow:visible;enable-background:new    ;" width="336" height="336" xlink:href="5DE02118.png"  transform="matrix(1 0 0 1 604.115 552.854)">
-	</image>
-	
-		<image style="overflow:visible;enable-background:new    ;" width="336" height="336" xlink:href="5DE02116.png"  transform="matrix(1 0 0 1 83.5201 418.741)">
-	</image>
 </g>
 </svg>

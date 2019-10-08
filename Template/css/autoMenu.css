@@ -45,11 +45,26 @@ a:focus{outline:none;}
 }
 .autoMenu ul>li>a{
 	color: #399c9c;
+	margin-left: 10px;
 }
 .autoMenu ul>li.active>a{
 	color: #ff5370;
 }
-
+.autoMenu ul>li:hover{
+	background: url('../../File/bookmark.svg') no-repeat;
+	background-size: 250px;
+	background-position: right;
+	/* opacity: 0.5; */
+	
+}
+.autoMenu ul>li:hover>a{
+	color: #FFDC5E;
+}
+.autoMenu ul>li.active{
+	background: url('../../File/bookmark.svg') no-repeat;
+	background-size: 250px;
+	background-position: right;
+}
 .btn-box{
 	display: none;
     width: 40px;

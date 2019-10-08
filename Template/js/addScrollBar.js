@@ -1,7 +1,7 @@
 $(document).ready(function () {
     // add the div we want to use
     $('body').append('<div class="scroll position-fixed" style="width:70px; bottom: 100%;right:1em; transition: all .3s ease-in-out">' +
-        '<img src="../../File/scroll.png"/>' +
+        '<img src="../../File/T--USTC-Software--scroll.png"/>' +
         '<div class="position-relative backHead" style="width: 70px; height: 110px; top: -110px; cursor: pointer;"></div>' +
         '</div>');
 

@@ -46,7 +46,8 @@
                 var height = typeof opts.height === 'number' && opts.height;
                 var padding = typeof opts.padding === 'number' && opts.padding;
                 that.$element.width(width+padding*2);
-                var html = '<ul style="height: '+ height +'px;">';
+                // var html = '<ul style="height: '+ height +'px;">';
+                var html = '<ul>';
                 var num = 0;
                 $('*').each(function(){
                     var _this = $(this);

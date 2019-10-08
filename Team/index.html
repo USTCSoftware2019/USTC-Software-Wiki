@@ -22,11 +22,11 @@
     <style type="text/css">
       .header {width: 100%}
       .top_menu {display: flex}
-      .logo {padding: 1em}
+      .logo {padding: 1em;}
+      .logo img {height: 90px;}
       /*.menu {margin-right: 0; position: absolute; right: 1em}*/
       .menu {width: 100%; display: flex; flex-direction: row-reverse;}
       .menu_list {display: inline-flex; color: #248ea9;}
-
       .menu_list li {display: inline-block;  position: relative;}
       .menu_list li a {color: #248ea9; }
       .menu_list li a:hover {color: #ffd24a; }
@@ -35,7 +35,7 @@
       .menu_item div {z-index: 1000; background: rgba(255, 255, 255, .5);}
       .menu_icon {display: none}
       .menu_icon > img {width: 2em; height: 2em; padding-top: .75em}
-      .more > span {display: inline-block; width: 1em; height: 1em; background-image: url("../File/slide_down.svg"); background-position: -18px; background-size: cover; transform: rotate(-90deg);}
+      .more > span {display: inline-block; width: 1em; height: 1em; background-image: url("../File/T--USTC-Software--slide_down.svg"); background-position: -18px; background-size: cover; transform: rotate(-90deg);}
       .more:hover > span {transform: rotate(0deg);}
       .more > span {transition: all .4s; }
       @media screen and (max-width: 800px) {
@@ -56,7 +56,7 @@
       .more:hover > .info_menu_item {display: block; opacity: 1; visibility: visible;}
 
       .slide_menu {display: none; background-color: #2196F3; width: 100%;}
-      .slide_menu_item > li > span {display: inline-block; width: 1em; height: 1em; background-image: url("../File/Slide_down_white.svg"); background-position: center; background-size: cover; transition: all .3s; transform: rotate(-90deg);}
+      .slide_menu_item > li > span {display: inline-block; width: 1em; height: 1em; background-image: url("../File/T--USTC-Software--Slide_down_white.svg"); background-position: center; background-size: cover; transition: all .3s; transform: rotate(-90deg);}
       .slide_menu_item > li {text-align: center; padding: .2em; color: aliceblue; }
       .slide_menu_item > li:hover { color: aqua; cursor: pointer;}
       .slide_menu_item > li:hover > i{ transform: rotate(0deg);}
@@ -71,7 +71,7 @@
       <div class="top_menu">
         <div class="logo">
           <a href="https://2019.igem.org/Team:USTC-Software">
-            <img src="../File/logo_w_min.jpg" alt="" style="height: 31px;">
+            <img src="../File/T--USTC-Software--logo_w_min.jpg" alt="">
           </a>
 
         </div>
@@ -134,7 +134,7 @@
           </ul>
         </div>
         <div class="menu_icon" id="menu_icon">
-          <img src="../File/menu.svg" alt="" srcset="">
+          <img src="../File/T--USTC-Software--menu.svg" alt="" srcset="">
         </div>
       </div>
 
@@ -210,15 +210,15 @@
 
 </header>
 <div class="next">
-  <img src="../File/arrow%20down.svg" alt="">
+  <img src="../File/T--USTC-Software--arrow%20down.svg" alt="">
 </div>
 <div class="page1">
   <div class="imgs">
     <div class="clock">
-      <img src="../File/clock.gif" alt="">
+      <img src="../File/T--USTC-Software--clock.gif" alt="">
     </div>
     <div class="light">
-      <img src="../File/light.png" alt="">
+      <img src="../File/T--USTC-Software--light.png" alt="">
     </div>
   </div>
   <div class="des d-flex justify-content-center flex-column align-items-center">
@@ -244,9 +244,6 @@
 </div>
 
 
-<!--<div class="btn-more d-flex justify-content-center align-items-center">-->
-<!--  <a class="btn btn-primary" href="TEAM/Team.html">KNOW MORE</a>-->
-<!--</div>-->
 
 <style>
   footer {position: absolute; bottom: 10vh;width: 80vw;}
@@ -261,7 +258,7 @@
   .clock img {border-radius: 50%; position: relative; left: 300px; height: 120px;}
   .light {position: absolute; right: 40vw; top: 10vh;}
   .light img {height: 200px;}
-  body {background: url("../File/WEB.svg") center no-repeat;background-size: cover; width: 100vw; height: 100vh;}
+  body {background: url("../File/T--USTC-Software--WEB.svg") center no-repeat;background-size: cover; width: 100vw; height: 100vh;}
 </style>
 <script>
   let page1IsShow  = true;
@@ -299,12 +296,12 @@
   function changeBg(){
       if(page1IsShow){
           $("body").css({
-              "background-image": "url(../File/web2.svg)"
+              "background-image": "url(../File/T--USTC-Software--web2.svg)"
           });
           page1IsShow = false;
       }else{
           $("body").css({
-              "background-image": "url(../File/WEB.svg)"
+              "background-image": "url(../File/T--USTC-Software--WEB.svg)"
           });
           page1IsShow = true;
       }
