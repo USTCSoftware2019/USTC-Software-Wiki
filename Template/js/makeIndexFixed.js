@@ -1,19 +1,30 @@
 $(document).ready(function () {
-   $(window).ready(function (ev) {
-       let top = $(document).scrollTop();
-       let menuTop = $('.autoMenu').offset().top;
-       let height = $('#autoMenu').height();
-       console.log(top, menuTop);
-       top = Number.MAX_SAFE_INTEGER;
+    // to do things with pageIndex
+    class PageIndex {
+        constructor(){
+            console.log('new PageIndex');
+        }
+        // set the index fixed
+        static makeIndexFixed(){
+            let height = $('#autoMenu').height();
+            $('.autoMenu').css({
+                "position": "fixed",
+                "top": "calc(50% - " + height/2 + "px)",
+            });
+        }
+        // add animation to the scroll event
+        static scrollToAnchor() {
+            $('.autoMenu a').on('click', function (ev) {
+                ev.preventDefault();
+                let anchorId = $(this).attr('href');
+                let nextTop = $(anchorId).offset().top;
+                $('html, body').animate({
+                    scrollTop: nextTop,
+                }, 600);
+            })
+        }
+    }
 
-       if(menuTop <= top){
-           console.log('is disappearing');
-           $('.autoMenu').css({
-               "position": "fixed",
-               "top": "calc(50% - " + height/2 + "px)",
-               // "left": "1em"
-           });
-       }
-
-   });
+    PageIndex.makeIndexFixed();
+    PageIndex.scrollToAnchor();
 });
