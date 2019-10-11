@@ -8,7 +8,7 @@ const parser = require('./parser/parser');
 let args = process.argv.splice(2);
 
 (function (args){
-    if(args.length == 0){
+    if(args.length === 0){
         console.log('please input more paras.')
         return;
     }
@@ -26,9 +26,12 @@ let args = process.argv.splice(2);
         }else if(args[1] === '-d'){
             let files = fileGetter.get(args[2]);
             for(let i = 0; i < files.length; i++){
-                parser.parse(files[i]);
+                if(path.extname(files[i]).search(/\.(html|js|css)/) !== -1){
+                    console.log(files[i], "is being parsed...");
+                    parser.parse(files[i]);
+                }
             }
         }
     }
-})(args)
+})(args);
 

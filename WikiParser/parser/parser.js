@@ -18,9 +18,12 @@ function parse(filename){
             dataStr = cssTrans(dataStr);
             dataStr = imgTrans(dataStr, mapper);
             dataStr = getBodyContent(dataStr);
+            // delete ../ dir
+            filename = filename.replace(/\.\.[\\\/]/g, "");
+            // console.log(filename);
             let filepath = path.join('output/', filename);
             let fileDir = path.dirname(filepath);
-            console.log(fileDir);
+            // console.log(fileDir);
             fs.mkdir(fileDir,{recursive: true}, (err) => {
                 if(err){
                     console.log('err when mkdir');
