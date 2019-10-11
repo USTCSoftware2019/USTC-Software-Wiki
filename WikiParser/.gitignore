@@ -1,0 +1,9 @@
+# IDE files
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Dependency
+node_modules
