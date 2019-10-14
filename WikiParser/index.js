@@ -32,6 +32,7 @@ let args = process.argv.splice(2);
                 }
             }
         }
+        return;
     }
 })(args);
 

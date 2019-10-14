@@ -1,18 +1,48 @@
-/*the passage style*/
-.page-content > .card-body {
-    font-size: 16px;
-    padding: 2em;
+@font-face {
+    font-family: ubuntu;
+    src: url("../../File/T--USTC-Software--ubuntu.woff");
 }
-/* the passage title style */
+@font-face {
+    font-family: alegreya;
+    src: url("../../File/T--USTC-Software--alegreya.woff");
+}
+@font-face {
+    font-family: amaranth;
+    src: url("../../File/T--USTC-Software--amaranth.woff");
+}
+/*the article style*/
+.page-content > .card-body {
+    font-size: 18px;
+    padding: 3em;
+    font-family: ubuntu, serif  !important;
+}
+/* the article title style */
 .page-content > .card-body h1{
     line-height: 3em;
     text-align: center;
+    margin: 0 !important;
+    font-family: alegreya, serif !important;
+    font-weight: bold;
 }
 /*the article title style*/
 .page-content > .card-body h3{
     line-height: 3em;
+    margin: 0 !important;
+    font-family: alegreya, serif !important;
+    font-weight: bold;
 }
 /*the article 2nd title style*/
 .page-content > .card-body h4{
     line-height: 2em;
+    margin: 0 !important;
+    font-family: alegreya, serif !important;
+    font-weight: bold;
+}
+/*the article passage style*/
+.page-content > .card-body .passage{
+    line-height: 1.5em;
+    color: #575246;
+    font-family: ubuntu, serif !important;
+    word-break: break-all;
+    text-align: justify;
 }

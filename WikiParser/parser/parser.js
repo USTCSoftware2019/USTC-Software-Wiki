@@ -17,7 +17,7 @@ function parse(filename){
             dataStr = jsTrans(dataStr);
             dataStr = cssTrans(dataStr);
             dataStr = imgTrans(dataStr, mapper);
-            dataStr = getBodyContent(dataStr);
+            // dataStr = getBodyContent(dataStr);
             // delete ../ dir
             filename = filename.replace(/\.\.[\\\/]/g, "");
             // console.log(filename);
@@ -47,6 +47,7 @@ function getBodyContent(dataStr){
 }
 
 
+
 function jsTrans(dataStr){
     let dataStrRep = dataStr.replace(/\..*?Template\/js\/(?<filename>.*?)\.js/g, 
             "https://2019.igem.org/Template:USTC-Software/js/$<filename>?action=raw&ctype=text/javascript");
@@ -60,7 +61,7 @@ function cssTrans(dataStr){
 }
 
 function imgTrans(dataStr, mapper){
-    let dataStrRep = dataStr.replace(/\..*?File\/(?<filename>.*?\.(png|svg|jpg|gif))/g, 
+    let dataStrRep = dataStr.replace(/\..*?File\/(?<filename>.*?\.(png|svg|jpg|gif|woff))/g,
             function(match, p1){
                 // console.log(mapper[p1]);
                 return mapper[p1];
