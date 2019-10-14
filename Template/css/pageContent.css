@@ -46,3 +46,7 @@
     word-break: break-all;
     text-align: justify;
 }
+/*the img in the article style*/
+.page-content > .card-body .psgImg img{
+    height: 400px;
+}

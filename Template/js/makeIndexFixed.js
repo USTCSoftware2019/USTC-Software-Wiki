@@ -8,8 +8,8 @@ $(document).ready(function () {
         static makeIndexFixed(){
             let height = $('#autoMenu').height();
             $('.autoMenu').css({
-                "position": "fixed",
-                "top": "calc(50% - " + height/2 + "px)",
+                "position": "fixed  ",
+                "top": "calc(50vh - " + height/2 + "px)",
             });
         }
         // add animation to the scroll event
