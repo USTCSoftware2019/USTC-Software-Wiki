@@ -48,5 +48,19 @@
 }
 /*the img in the article style*/
 .page-content > .card-body .psgImg img{
-    height: 400px;
+    max-height: 380px;
+    margin-top: 0.75em;
+}
+/*the reference title style*/
+.page-content > .card-body h2.ref {
+    line-height: 3em;
+    text-align: center;
+    margin: 0 !important;
+    font-family: alegreya, serif !important;
+    font-weight: bold;
+}
+/*the reference list style*/
+.page-content > .card-body .ref-list ul{
+    font-style: italic;
+    color: #403f3c;
 }
