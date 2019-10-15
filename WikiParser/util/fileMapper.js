@@ -3,14 +3,21 @@ const fs = require('fs');
 
 let initUrl = 'https://2019.igem.org/Special:ListFiles';
 let initUrlParam = {
-    limit: 200,
+    limit: 500,
+    ilsearch: '',
     user: 'ZsStrike'
 };
 
 function getMapper(url = initUrl, urlParam  = initUrlParam){
+    // console.log('test getMapper1');
     axios.get(url, {
-        params: initUrlParam
+        params: urlParam
+    }, {
+        headers: {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+        }
     }).then(function(res){
+        // console.log('test getMapper2', res);
         const baseDir = 'https://2019.igem.org';
         let mapper = {};
         let pattern = /\(<a href="(.*?)">file<\/a>\)/g;
@@ -32,6 +39,7 @@ function getMapper(url = initUrl, urlParam  = initUrlParam){
         });
     }).catch(function(err){
         console.log('getMapper--->get err.');
+        // console.log(err);
         return null;
     });
 }

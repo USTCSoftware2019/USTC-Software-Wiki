@@ -15,7 +15,7 @@ li {
 
 a {
     text-decoration: none;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 a:hover {
@@ -41,18 +41,18 @@ a:focus{outline:none;}
   /*box-shadow:0 0 10px #CCC;*/
 }
 .autoMenu ul>li.sub{
-	padding-left: 6px;
+	padding-left: 10px;
 }
 .autoMenu ul>li>a{
 	color: #0a4152;
-	/*margin-left: 10px;*/
+	margin-left: 5px;
 }
 .autoMenu ul>li.active>a{
 	color: #ff5370;
 }
 .autoMenu ul>li:hover{
 	background: url('../../File/T--USTC-Software--bookmark.svg') no-repeat;
-	background-size: 250px;
+	background-size: 400px;
 	background-position: right;
 	/* opacity: 0.5; */
 	
@@ -62,7 +62,7 @@ a:focus{outline:none;}
 }
 .autoMenu ul>li.active{
 	background: url('../../File/T--USTC-Software--bookmark.svg') no-repeat;
-	background-size: 250px;
+	background-size: 400px;
 	background-position: right;
 }
 .btn-box{

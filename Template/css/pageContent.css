@@ -33,7 +33,7 @@
 }
 /*the article 2nd title style*/
 .page-content > .card-body h4{
-    line-height: 2em;
+    line-height: 3em;
     margin: 0 !important;
     font-family: alegreya, serif !important;
     font-weight: bold;
