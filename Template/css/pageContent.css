@@ -43,14 +43,20 @@
     line-height: 1.5em;
     color: #575246;
     font-family: ubuntu, serif !important;
-    word-break: break-all;
+    /*word-break: break-all;*/
     text-align: justify;
+}
+/*the psgImg container style*/
+.page-content > .card-body .psgImg {
+    margin: 1em;
+    text-align: center !important;
 }
 /*the img in the article style*/
 .page-content > .card-body .psgImg img{
     max-height: 380px;
-    margin-top: 0.75em;
+    margin: 1em;
 }
+
 /*the reference title style*/
 .page-content > .card-body h2.ref {
     line-height: 3em;
@@ -63,4 +69,7 @@
 .page-content > .card-body .ref-list ul{
     font-style: italic;
     color: #403f3c;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }

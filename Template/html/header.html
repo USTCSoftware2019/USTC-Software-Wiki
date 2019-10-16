@@ -18,8 +18,8 @@
     .header {width: 100%}
     .top_menu {display: flex}
     .logo {padding: 1em}
-    .menu {margin-right: 0; position: absolute; right: 1em}
-    .menu_list {display: inline-flex; color: #248ea9;}
+    .menu {width: 100%;}
+    .menu_list {display: flex; justify-content: flex-end; color: #248ea9; width: 100%;}
     .menu_list li {display: inline-block;  position: relative;}
     .menu_list li a {color: #248ea9; }
     .menu_list li a:hover {color: #ffd24a; }
@@ -28,14 +28,14 @@
     .menu_item div {z-index: 1000; background: rgba(255, 255, 255, .5);}
     .menu_icon {display: none}
     .menu_icon > img {width: 2em; height: 2em; padding-top: .75em}
-    .more > span {display: inline-block; width: 1em; height: 1em; background-image: url(../../File/T--USTC-Software--slide_down.svg); background-position: -18px; background-size: cover; transform: rotate(-90deg);}
+    .more > span {display: inline-block; width: 1em; height: 1em; background-image: url('https://2019.igem.org/wiki/images/0/0a/T--USTC-Software--slide_down.svg'); background-position: -18px; background-size: cover; transform: rotate(-90deg);}
     .more:hover > span {transform: rotate(0deg);}
     .more > span {transition: all .4s; }
     @media screen and (max-width: 800px) {
         .menu {display: none}
         .menu_icon {display: block; position: absolute; right: 1em}
     }
-    .info_menu_item {font-size: .9em; width: 130px; position: absolute; display: block; border: 1px solid #dddddd; border-radius: 3px; visibility: hidden;opacity: 0; transition: all .3s; }
+    .info_menu_item {font-size: .9em; width: 140px; position: absolute; display: block; border: 1px solid #dddddd; border-radius: 3px; visibility: hidden;opacity: 0; transition: all .3s; }
     .info_menu_item ul {display: flex; flex-direction: column; align-items: center;}
     .info_menu_item li {padding: .3em}
     .info_menu_item li a {color: #248ea9}
@@ -49,7 +49,7 @@
     .more:hover > .info_menu_item {display: block; opacity: 1; visibility: visible;}
 
     .slide_menu {display: none; background-color: #2196F3; width: 100%;}
-    .slide_menu_item > li > span {display: inline-block; width: 1em; height: 1em; background-image: url(../../File/T--USTC-Software--Slide_down_white.svg); background-position: center; background-size: cover; transition: all .3s; transform: rotate(-90deg);}
+    .slide_menu_item > li > span {display: inline-block; width: 1em; height: 1em; background-image: url('https://2019.igem.org/wiki/images/f/f4/T--USTC-Software--Slide_down_white.svg'); background-position: center; background-size: cover; transition: all .3s; transform: rotate(-90deg);}
     .slide_menu_item > li {text-align: center; padding: .2em; color: aliceblue; }
     .slide_menu_item > li:hover { color: aqua; cursor: pointer;}
     .slide_menu_item > li:hover > i{ transform: rotate(0deg);}
@@ -60,6 +60,7 @@
     .slide_info li:hover > a {color: aqua;}
 
 </style>
+<div class="container">
     <nav class="header">
         <div class="top_menu">
             <div class="logo">
@@ -113,21 +114,21 @@
                     </li>
                     <li class="menu_item more awards_menu">AWARDS<span></span>
                         <div class="info_menu_item">
-                                <ul>
-                                    <li><a href="https://2019.igem.org/Team:USTC-Software/Entrepreneurship">Entrepreneurship</a></li>
-                                    <li><a href="https://2019.igem.org/Team:USTC-Software/Hardware">Hardware</a></li>
-                                    <li><a href="https://2019.igem.org/Team:USTC-Software/Measurement">Measurement</a></li>
-                                    <li><a href="https://2019.igem.org/Team:USTC-Software/Model">Model</a></li>
-                                    <li><a href="https://2019.igem.org/Team:USTC-Software/Plant">Plant</a></li>
-                                    <li><a href="https://2019.igem.org/Team:USTC-Software/Software">Software</a></li>
-                                </ul>
-                            </div>
+                            <ul>
+                                <li><a href="https://2019.igem.org/Team:USTC-Software/Entrepreneurship">Entrepreneurship</a></li>
+                                <li><a href="https://2019.igem.org/Team:USTC-Software/Hardware">Hardware</a></li>
+                                <li><a href="https://2019.igem.org/Team:USTC-Software/Measurement">Measurement</a></li>
+                                <li><a href="https://2019.igem.org/Team:USTC-Software/Model">Model</a></li>
+                                <li><a href="https://2019.igem.org/Team:USTC-Software/Plant">Plant</a></li>
+                                <li><a href="https://2019.igem.org/Team:USTC-Software/Software">Software</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
             <div class="menu_icon" id="menu_icon">
                 <img src="../../File/T--USTC-Software--menu.svg" alt="" srcset="">
-            </div>            
+            </div>
         </div>
 
         <div class="slide_menu" id="slide_menu">
@@ -189,14 +190,16 @@
             </ul>
         </div>
     </nav>
-    <script>
-    $('#menu_icon').on('click', function(){
-        console.log('hello');
-        $('#slide_menu').slideToggle(250)
-    });
-    $('.slide_menu li.more').on('click', function(){
-        $(this).children('div.slide_info').slideToggle(250);
-    });
-    </script>
+</div>
+
+<script>
+$('#menu_icon').on('click', function(){
+    console.log('hello');
+    $('#slide_menu').slideToggle(250)
+});
+$('.slide_menu li.more').on('click', function(){
+    $(this).children('div.slide_info').slideToggle(250);
+});
+</script>
 </body>
 </html>

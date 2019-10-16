@@ -10,6 +10,7 @@ $(document).ready(function () {
             $('.autoMenu').css({
                 "position": "fixed  ",
                 "top": "calc(50vh - " + height/2 + "px)",
+                // "left": "3vw"
             });
         }
         // add animation to the scroll event
