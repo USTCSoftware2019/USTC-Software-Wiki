@@ -12,7 +12,12 @@ let args = process.argv.splice(2);
         console.log('please input more paras.')
         return;
     }
+    // used to updated the mapper: node index.js -u
     if(args[0] === '-u'){
+        if(args.length < 1){
+            console.log('please input more paras.')
+            return;
+        }
         fileMapper.getMapper();
         return;
     }
@@ -21,9 +26,11 @@ let args = process.argv.splice(2);
             console.log('please input more paras.')
             return;
         }
+        // used to convert file: node index.js -t -f path/to/filename
         if(args[1] === '-f'){
             parser.parse(args[2]);
         }else if(args[1] === '-d'){
+            // used to convert directory: node index.js -t -f path/to/directory/
             let files = fileGetter.get(args[2]);
             for(let i = 0; i < files.length; i++){
                 if(path.extname(files[i]).search(/\.(html|js|css)/) !== -1){
