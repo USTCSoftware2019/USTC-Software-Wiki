@@ -162,10 +162,10 @@ $(document).ready(function(){
     $(window).resize(function(){ setPosition(); });
 
     // on click, scroll to target section
-    points.click(function(){
+    points.click(function (keyframes, options){
         var sectionIndex = points.index($(this));
         var targetY = $('.card h3, .card h4, .card h2.ref').eq(sectionIndex).offset().top - (triggerPoint * .92);
-        $('html, body').animate({scrollTop:targetY}, 600, 'easeInOutCubic');
+        $('html, body').animate({scrollTop: targetY}, 600);
     });
 
 });
