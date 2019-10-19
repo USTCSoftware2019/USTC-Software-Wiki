@@ -49,13 +49,13 @@ function getBodyContent(dataStr){
 
 
 function jsTrans(dataStr){
-    let dataStrRep = dataStr.replace(/\.\..*?Template\/js\/(?<filename>.*?)\.js/g,
+    let dataStrRep = dataStr.replace(/\.\..*?(Template)?\/js\/(?<filename>.*?)\.js/g,
             "https://2019.igem.org/Template:USTC-Software/js/$<filename>?action=raw&ctype=text/javascript");
     return dataStrRep;
 }
 
 function cssTrans(dataStr){
-    let dataStrRep = dataStr.replace(/\.\..*?Template\/css\/(?<filename>.*?)\.css/g,
+    let dataStrRep = dataStr.replace(/\.\..*?(Template)?\/css\/(?<filename>.*?)\.css/g,
             "https://2019.igem.org/Template:USTC-Software/css/$<filename>?action=raw&ctype=text/css");
     return dataStrRep;
 }
