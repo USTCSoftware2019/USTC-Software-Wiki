@@ -22,7 +22,7 @@ $(document).ready(function(){
     var labels = $('.progressbar .labels');
     holder.append('<div class="labelsInner"></div>');
     var labelsInner = $('.progressbar .labelsInner');
-    $('h3, h4, h2.ref').each(function(){
+    $('.card h3, .card h4, .card h2.ref').each(function(){
         var text = $(this).text();
         var end = text.indexOf(' ');
         if(end > text.indexOf(':') && text.indexOf(':') !== -1) end = text.indexOf(':');
@@ -107,13 +107,13 @@ $(document).ready(function(){
             var currentPosition = $(window).scrollTop() + triggerPoint;
             // dots
             // if before first section
-            if(currentPosition < $('h3, h4, h2.ref').eq(0).offset().top) {
+            if(currentPosition < $('.card h3, .card h4, .card h2.ref').eq(0).offset().top) {
                 points.removeClass('reading read');
                 section = -1;
             }
             // if after first section
             else {
-                $('h3, h4, h2.ref').each(function(){
+                $('.card h3, .card h4, .card h2.ref').each(function(){
                     var sectionTop = $(this).offset().top;
                     if(currentPosition >= sectionTop) {
                         points.removeClass('reading');
@@ -144,8 +144,8 @@ $(document).ready(function(){
                 var startPoint = points.eq(section);
                 var startPointX = startPoint.offset().left;
                 var startPointWidth = startPoint.width();
-                var startSection = $('h3, h4, h2.ref').eq(section);
-                var endSection = $('h3, h4, h2.ref').eq(section+1);
+                var startSection = $('.card h3, .card h4, .card h2.ref').eq(section);
+                var endSection = $('.card h3, .card h4, .card h2.ref').eq(section+1);
                 var startSectionY = startSection.offset().top;
                 var endSectionY = endSection.offset().top;
                 var sectionLength = endSectionY - startSectionY;
@@ -164,7 +164,7 @@ $(document).ready(function(){
     // on click, scroll to target section
     points.click(function(){
         var sectionIndex = points.index($(this));
-        var targetY = $('h3, h4, h2.ref').eq(sectionIndex).offset().top - (triggerPoint * .92);
+        var targetY = $('.card h3, .card h4, .card h2.ref').eq(sectionIndex).offset().top - (triggerPoint * .92);
         $('html, body').animate({scrollTop:targetY}, 600, 'easeInOutCubic');
     });
 
