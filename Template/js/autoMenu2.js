@@ -32,13 +32,13 @@ $(document).ready(function(){
         if($(this).is('H4')){
             code = '<i class="innerTitle" data-label="&nbsp;"></i>';
         }else if($(this).is('H2')){
-            code = '<i class="mainTitle" data-label="Ref"></i>'
+            code = '<i class="mainTitle" data-label="Ref"></i>';
         }
         labels.append(code);
     });
 
     var points = labels.find('i');
-    points.css('width', 100/$('h3, h2.ref, h4').length+'%');
+    points.css('width', 100/$('.card h3, .card h2.ref, .card h4').length+'%');
 
     // var points = labelsInner.find('i');
     // points.css('width', 100/$('h3, h2.ref, h4').length+'%');
