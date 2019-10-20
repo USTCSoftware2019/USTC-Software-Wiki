@@ -2,108 +2,164 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Model</title>
+  <title>Index</title>
 </head>
 <body>
-<link rel="stylesheet" type="text/css" href="https://2019.igem.org/Template:USTC-Software/css/default?action=raw&ctype=text/css" />
-<link rel="stylesheet" type="text/css" href="https://2019.igem.org/Template:USTC-Software/css/bootstrap?action=raw&ctype=text/css" />
-<script type="text/javascript" src="https://2019.igem.org/Template:USTC-Software/js/jquery?action=raw&ctype=text/javascript"></script>
-<script type="text/javascript" src="https://2019.igem.org/Template:USTC-Software/js/popper?action=raw&ctype=text/javascript"></script>
-<script type="text/javascript" src="https://2019.igem.org/Template:USTC-Software/js/bootstrap?action=raw&ctype=text/javascript"></script>
+<!--对应链接<li><a href="https://2019.igem.org/Team:USTC-Software/Collaborations">Collaborations</a></li>-->
+<link href="https://2019.igem.org/Template:USTC-Software/css/default?action=raw&ctype=text/css" rel="stylesheet"
+      type="text/css"/>
+<link href="https://2019.igem.org/Template:USTC-Software/css/bootstrap?action=raw&ctype=text/css" rel="stylesheet"
+      type="text/css"/>
+<script src="https://2019.igem.org/Template:USTC-Software/js/jquery?action=raw&ctype=text/javascript"
+        type="text/javascript"></script>
+<script src="https://2019.igem.org/Template:USTC-Software/js/popper?action=raw&ctype=text/javascript"
+        type="text/javascript"></script>
+<script src="https://2019.igem.org/Template:USTC-Software/js/bootstrap?action=raw&ctype=text/javascript"
+        type="text/javascript"></script>
+<script src="https://2019.igem.org/common/MathJax-2.5-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<div class="autoMenu2" id="autoMenu2"></div>
 <div class="container">
-  <div class="card">
-    <div class="card-body">
-      <h2 class="text-center">Model</h2>
-      <hr>
-      <div class="content">
-        <div id="title1">
-          <h3>Ⅰ.Title One</h3>
-          <p>Mathematical models and computer simulations provide a great way to describe the function
-            and operation of BioBrick Parts and Devices. Synthetic Biology is an engineering discipline,
-            and part of engineering is simulation and modeling to determine the behavior of your design
-            before you build it. Designing and simulating can be iterated many times in a computer
-            before moving to the lab. This award is for teams who build a model of their system and use
-            it to inform system design or simulate expected behavior in conjunction with experiments in the wetlab.
-          </p>
-          <div class="d-flex justify-content-center flex-column">
-            <img src="../../File/Red%20Appearance.jpg" alt="" style="width:500px; margin: 0 auto;">
-            <span class="text-center">Figure 1</span>
+  <div class="row">
+    <!-- <div class="col-lg-2 col-md-0">
+      <div class="autoMenu d-none d-lg-block" data-autoMenu id="autoMenu"></div>
+    </div> -->
+    <div class="col-lg-12 col-md-12">
+      <div class="card page-content">
+        <div class="card-body">
+          <h1 class="text-center">Model</h1>
+          <h3>Biological Models</h3>
+          <h4>Flux Balance Analysis</h4>
+          <div class="passage">Flux Balance Analysis (FBA) is a mathematical method for simulating metabolism in
+            metabolic networks. It is based on linear programming to calculate fluxes when the model is stable.
+            <br>
+            Assuming S is a matrix, which contains all reactions in a model. In this matrix, metabolites consumed take
+            negative coefficients, and metabolites produced then take positive ones. Furthermore, v is a vector that
+            represents the flux of all reactions. When the system is steady, it satisfies:
+            $$
+            \textbf{S}\textbf{v}=0
+            $$
+            And then, FBA tries to maximize or minimize the objective function $$\textbf{c}^\textrm{T} \textbf{v}$$, which
+            c contains the weight of all reactions contributing to the function. Now it is clear that FBA is a linear
+            programming problem, and it just works.
           </div>
-          <p>Mathematical models and computer simulations provide a great way to describe the function
-            and operation of BioBrick Parts and Devices. Synthetic Biology is an engineering discipline,
-            and part of engineering is simulation and modeling to determine the behavior of your design
-            before you build it. Designing and simulating can be iterated many times in a computer
-            before moving to the lab. This award is for teams who build a model of their system and use
-            it to inform system design or simulate expected behavior in conjunction with experiments in the wetlab.
-          </p>
-        </div>
-        <div id="title2">
-          <h3>Ⅱ.Title One</h3>
-          <p>Mathematical models and computer simulations provide a great way to describe the function
-            and operation of BioBrick Parts and Devices. Synthetic Biology is an engineering discipline,
-            and part of engineering is simulation and modeling to determine the behavior of your design
-            before you build it. Designing and simulating can be iterated many times in a computer
-            before moving to the lab. This award is for teams who build a model of their system and use
-            it to inform system design or simulate expected behavior in conjunction with experiments in the wetlab.
-          </p>
-          <div class="d-flex justify-content-center flex-column">
-            <img src="../../File/Red%20Appearance.jpg" alt="" style="width:500px; margin: 0 auto;">
-            <span class="text-center">Figure 1</span>
+          <h4>Flux Variability Analysis</h4>
+          <div class="passage">
+            Flux Variability Analysis (FVA) is an extension of FBA. It can show the minimum and maximum range of each
+            reaction flux while they satisfy constraints and have the same optimal objective by solving a double linear
+            programming problem.
+            <br>
+            However, when the metabolic network contains internal loops, the result can be too high in absolute to be
+            realistic. Users can select the "loopless" option to avoid such internal loops, and get a more consistent
+            result.
           </div>
-          <p>Aeromonas Hydrophila is a gram-negative bacterium which exists ubiquitously in water ponds.
-            It is an opportunistic pathogen which can cause many diseases in fish and create a large amount
-            of economic loss in aquaculture. The symptoms of the diseases caused by A. hydrophila infection include
-            ulcers, fin rot, and hemorrhagic septicaemia. When A. hydrophila enters into fish body, it often
-            colonizes the gastrointestinal tract first. The virulence factors of A. hydrophila include its
-            enterotoxins, hemolysin, and proteases produced by Type II and Type III secretion system. (Citterio)
-          </p>
-        </div>
-        <div id="title3">
-          <h3>Ⅲ.Title One</h3>
-          <p>Aeromonas Hydrophila is a gram-negative bacterium which exists ubiquitously in water ponds.
-            It is an opportunistic pathogen which can cause many diseases in fish and create a large amount
-            of economic loss in aquaculture. The symptoms of the diseases caused by A. hydrophila infection include
-            ulcers, fin rot, and hemorrhagic septicaemia. When A. hydrophila enters into fish body, it often
-            colonizes the gastrointestinal tract first. The virulence factors of A. hydrophila include its
-            enterotoxins, hemolysin, and proteases produced by Type II and Type III secretion system. (Citterio)
-          </p>
-          <div class="d-flex justify-content-center flex-column">
-            <img src="../../File/Red%20Appearance.jpg" alt="" style="width:500px; margin: 0 auto;">
-            <span class="text-center">Figure 1</span>
+          <h3>Computer Models</h3>
+          <h4>Object-Relational Mapping</h4>
+          <div class="passage">
+            Object-Relational Mapping (ORM) enables us to work with databases more comfortable and safer. It fills the
+            gap between object-oriented programming languages and relational databases and avoids the vulnerability of
+            SQL Injection.
+            <br>
+            We use ORM to organize our metabolic networks, biobricks data, and user's computational models. It brings us
+            the convenience of creating, querying, listing, and connecting models, with acceptable performance.
+            <br>
+            In practice, we use Django ORM with MySQL backend to provide fast, flexible, and reliable service.
           </div>
-          <p>Aeromonas Hydrophila is a gram-negative bacterium which exists ubiquitously in water ponds.
-            It is an opportunistic pathogen which can cause many diseases in fish and create a large amount
-            of economic loss in aquaculture. The symptoms of the diseases caused by A. hydrophila infection include
-            ulcers, fin rot, and hemorrhagic septicaemia. When A. hydrophila enters into fish body, it often
-            colonizes the gastrointestinal tract first. The virulence factors of A. hydrophila include its
-            enterotoxins, hemolysin, and proteases produced by Type II and Type III secretion system. (Citterio)
-          </p>
-        </div>
-        <div id="title4">
-          <h3>Ⅳ.Title One</h3>
-          <p>Aeromonas Hydrophila is a gram-negative bacterium which exists ubiquitously in water ponds.
-            It is an opportunistic pathogen which can cause many diseases in fish and create a large amount
-            of economic loss in aquaculture. The symptoms of the diseases caused by A. hydrophila infection include
-            ulcers, fin rot, and hemorrhagic septicaemia. When A. hydrophila enters into fish body, it often
-            colonizes the gastrointestinal tract first. The virulence factors of A. hydrophila include its
-            enterotoxins, hemolysin, and proteases produced by Type II and Type III secretion system. (Citterio)
-          </p>
-          <div class="d-flex justify-content-center flex-column">
-            <img src="../../File/Red%20Appearance.jpg" alt="" style="width:500px; margin: 0 auto;">
-            <span class="text-center">Figure 1</span>
+          <h4>Message Queues</h4>
+          <div class="passage">
+            Our website requires computing large models, and it is quite embarrassing to see users waiting for browsers
+            for so long. So we use message queues to maintain computing tasks.
+            <br>
+            We split our programs computing models from our website, and use message queues to send and receive
+            information about our computation. A queue is a data structure that stores things waiting to be handled, and
+            it obeys the "First Come, First Serve" principle. So, we can store our computing tasks in the queue, and
+            response to users instantly about the progress of his tasks.
+            <br>
+            In Foresyn, we use RabbitMQ and Celery to build our message queues. Here, Celery uses its protocol to
+            communicate with web programs and computation programs. And RabbitMQ acts as a broker who accepts and
+            forwards messages of Celery.
           </div>
-          <p>Aeromonas Hydrophila is a gram-negative bacterium which exists ubiquitously in water ponds.
-            It is an opportunistic pathogen which can cause many diseases in fish and create a large amount
-            of economic loss in aquaculture. The symptoms of the diseases caused by A. hydrophila infection include
-            ulcers, fin rot, and hemorrhagic septicaemia. When A. hydrophila enters into fish body, it often
-            colonizes the gastrointestinal tract first. The virulence factors of A. hydrophila include its
-            enterotoxins, hemolysin, and proteases produced by Type II and Type III secretion system. (Citterio)
-          </p>
+          <h4>Different Searching Engines</h4>
+          <div class="passage">
+            When we are developing Foresyn, we discovered that there is a contradiction between speed and accuracy. So
+            our strategy is to use slow but accurate algorithm when searching small datasets, and use fast but less
+            accurate algorithm when searching large ones.
+            <br>
+            Here, there are only some models like E. coli, but a lot of genes, reactions and metabolites in our
+            database. We choose to calculate Levenshtein distances for model searching. Levenshtein distance defines as
+            the following recursive function:
+            $$
+            \qquad\operatorname{lev}_{a,b}(i,j) = \begin{cases}
+            \max(i,j) & \text{if } \min(i,j)=0, \\
+            \min (\operatorname{lev}_{a,b}(i-1,j) + 1,\operatorname{lev}_{a,b}(i,j-1) + 1,
+            \operatorname{lev}_{a,b}(i-1,j-1) + 1) & a_i \neq b_i, \\
+            \min (\operatorname{lev}_{a,b}(i-1,j) + 1,\operatorname{lev}_{a,b}(i,j-1) + 1,
+            \operatorname{lev}_{a,b}(i-1,j-1)) & \text{otherwise.} \\
+            \end{cases}
+            $$
+            which has a time complexity of $O(nm)$ where n and m are the length of the two strings.
+            <br>
+            When we are handling genes, reactions and metabolites, we use another algorithm.
+          </div>
+          <h4>Biobricks Recommendation</h4>
+          <div class="passage">
+            TBD
+          </div>
+          <h2 class="ref">References</h2>
+          <div class="ref-list">
+            <ul>
+              <li>1. Orth JD, Thiele I, Palsson BØ. What is flux balance analysis?. *Nat Biotechnol*.
+                2010;28(3):245–248. doi:10.1038/nbt.1614
+              </li>
+              <li>2. Gudmundsson S, Thiele I. Computationally efficient flux variability analysis. *BMC Bioinformatics*.
+                2010;11:489. Published 2010 Sep 29. doi:10.1186/1471-2105-11-489
+              </li>
+              <li>3. Arne C. Müller, Alexander Bockmayr, Fast thermodynamically constrained flux variability analysis,
+                *Bioinformatics*, Volume 29, Issue 7, 1 April 2013, Pages 903–909,
+                https://doi.org/10.1093/bioinformatics/btt059
+              </li>
+              <li>4. Abdelmoneim Amer Desouki, Florian Jarre, Gabriel Gelius-Dietrich, Martin J. Lercher, CycleFreeFlux:
+                efficient removal of thermodynamically infeasible loops from flux distributions, *Bioinformatics*,
+                Volume 31, Issue 13, 1 July 2015, Pages 2159–2165, https://doi.org/10.1093/bioinformatics/btv096
+              </li>
+              <li>5. Ambler, Scott W. "Mapping objects to relational databases." On the World Wide Web: http://www.
+                AmbySoft. com (2000).
+              </li>
+              <li>6. Vinoski, Steve. "Advanced message queuing protocol." IEEE Internet Computing 6 (2006): 87-89.</li>
+            </ul>
+          </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>
+
+<!--autoMenu css and js files, generate Menu of each article-->
+<!--<link href="../../Template/css/autoMenu.css" rel="stylesheet">-->
+<!--<script src="../../Template/js/autoMenu.js"></script>-->
+
+<!--autoMenu css and js files, generate Menu of each article-->
+<link href="../../Template/css/autoMenu2.css" rel="stylesheet">
+<script src="../../Template/js/autoMenu2.js"></script>
+
+<!--scrollBar js. when scroll down, a cat will be there-->
+<script src="../../Template/js/addScrollBar.js"></script>
+
+<!-- make content Menu fixed-->
+<script src="../../Template/js/makeIndexFixed.js"></script>
+
+<!--add background-->
+<script src="../../Template/js/addBackground.js"></script>
+
+<link href="../../Template/css/pageContent.css" rel="stylesheet">
+
+<!-- some updated css style -->
+<!--<style>-->
+<!--div.card p {margin: 20px;}-->
+<!--div.card h2,h3,h4 {margin: 25px;}-->
+<!--div.card h1 {margin-top: 30px;}-->
+<!--div.card img {margin-left: 30px; margin-right:30px;}-->
+<!--</style>-->
+
 </body>
 </html>
