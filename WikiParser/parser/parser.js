@@ -61,7 +61,7 @@ function cssTrans(dataStr){
 }
 
 function imgTrans(dataStr, mapper){
-    let dataStrRep = dataStr.replace(/\.\..*?File\/(?<filename>.*?\.(png|svg|jpg|gif|woff))/g,
+    let dataStrRep = dataStr.replace(/\.\..*?File\/(?<filename>.*?\.(png|svg|jpg|gif|woff|pdf))/g,
             function(match, p1){
                 // console.log(mapper[p1]);
                 return mapper[p1];
