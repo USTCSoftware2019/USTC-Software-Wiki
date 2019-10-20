@@ -17,53 +17,70 @@
 <script src="https://2019.igem.org/Template:USTC-Software/js/bootstrap?action=raw&ctype=text/javascript"
         type="text/javascript"></script>
 
-<div id="autoMenu2" class="autoMenu2"></div>
+<div class="autoMenu2" id="autoMenu2"></div>
 <div class="container">
   <div class="row">
-<!--    <div class="col-lg-2 col-md-0">-->
-<!--      <div class="autoMenu d-none d-lg-block" data-autoMenu id="autoMenu"></div>-->
-<!--    </div>-->
+    <!--    <div class="col-lg-2 col-md-0">-->
+    <!--      <div class="autoMenu d-none d-lg-block" data-autoMenu id="autoMenu"></div>-->
+    <!--    </div>-->
     <div class="col-lg-12 col-md-12">
       <div class="card page-content">
         <div class="card-body">
           <h1 class="text-center">Description</h1>
           <h3>Background</h3>
           <div class="passage">
-            As iGEM requires, Software teams should create a novel software tool that supports some aspect of synthetic biology. 
-            Since recent years our team were committed to software development which may contribute little to synthetic biology or relating works, 
+            As iGEM requires, Software teams should create a novel software tool that supports some aspect of synthetic
+            biology.
+            Since recent years our team were committed to software development which may contribute little to synthetic
+            biology or relating works,
             we want to develop something more "biology" this year.
             <br>
-            After talking with our PI, we learned about Flux balance analysis (FBA). FBA  is a method for analyzing the flow of metabolites through 
-            a metabolic network. FBA can calculate the flow of it and make it possible to "foresee" the growth rate of an organism or a 
+            After talking with our PI, we learned about Flux balance analysis (FBA). FBA is a method for analyzing the
+            flow of metabolites through
+            a metabolic network. FBA can calculate the flow of it and make it possible to "foresee" the growth rate of
+            an organism or a
             biotechnologically significant metabolite.
           </div>
           <h3>Inspiration</h3>
           <div class="passage">
-            iGEMers and biological factories frequently complain it repeated and troublesome to improve a genetic circuit and 
-            implement genome-scale metabolic network reconstructions when they dissatisfy the productivity of the organism, as we investigated. 
-            Factories regularly do such work simply based on experience or maybe just by random attempt. Labs may use some mathematical methods. 
-            Just as mentioned, the FBA and its further study have been proved useful in physiological studies, gap-filling efforts and genome-scale 
-            synthetic biology. However, using such methods doesn't mean that failure would not occur, and plenty of experiments, namely, plenty waste 
-            of time may still be demanded. For sure, there are several software that are made for such modeling, yet they do have several defects. 
-            Meanwhile, considering that both factories and iGEMers may specialize in biology but be quite unfamiliar with computer software, 
+            iGEMers and biological factories frequently complain it repeated and troublesome to improve a genetic
+            circuit and
+            implement genome-scale metabolic network reconstructions when they dissatisfy the productivity of the
+            organism, as we investigated.
+            Factories regularly do such work simply based on experience or maybe just by random attempt. Labs may use
+            some mathematical methods.
+            Just as mentioned, the FBA and its further study have been proved useful in physiological studies,
+            gap-filling efforts and genome-scale
+            synthetic biology. However, using such methods doesn't mean that failure would not occur, and plenty of
+            experiments, namely, plenty waste
+            of time may still be demanded. For sure, there are several software that are made for such modeling, yet
+            they do have several defects.
+            Meanwhile, considering that both factories and iGEMers may specialize in biology but be quite unfamiliar
+            with computer software,
             those command-prompt-only software are not perfect.
             <br>
-            Obviously, current tools cannot satisfy the need. Thus, here comes "ForeSyn", the software born to solve the problem.
+            Obviously, current tools cannot satisfy the need. Thus, here comes "ForeSyn", the software born to solve the
+            problem.
           </div>
           <h3>Project</h3>
           <div class="passage">
-            Foresyn is a user-friendly platform that was designed specifically for synthetic biologists to solve such issues above. 
-            Just like its name, Foresyn can foresee the targeted improvements to the users' experiment, give advise and therefore 
+            Foresyn is a user-friendly platform that was designed specifically for synthetic biologists to solve such
+            issues above.
+            Just like its name, Foresyn can foresee the targeted improvements to the users' experiment, give advise and
+            therefore
             increase productivity, literally by the neoteric workflow management based on our customized database.
             <br>
-            By using our software, labs and factories can alter the bounds on certain reactions to simulate the growth on different 
-            media or of bacteria with multiple gene knockouts. Despite this, users can select their own object function, and our 
+            By using our software, labs and factories can alter the bounds on certain reactions to simulate the growth
+            on different
+            media or of bacteria with multiple gene knockouts. Despite this, users can select their own object function,
+            and our
             software can output the optimal solution of it.
             <br>
-            Of course, users don't need to recite so many command codes. All you need may be a single mouse. Moreover, 
+            Of course, users don't need to recite so many command codes. All you need may be a single mouse. Moreover,
             our software performs a better user experience by presenting supreme graphical result display.
             <br>
-            Through this things, Foresyn can literally predict, I mean, foresee the likely result or trend of an experiment conducted 
+            Through this things, Foresyn can literally predict, I mean, foresee the likely result or trend of an
+            experiment conducted
             by a synthetic biologist. Particularly, what it sees immediately transforms into what you see.
           </div>
           <h3>Features</h3>
@@ -78,7 +95,78 @@
           </div>
           <h3>Comparison</h3>
           <div class="passage">
-            I don't know what to write.
+            Comparing our project with the software we can get from online now, we
+            find that our project has some significant features that distinguish it from the others.
+            Firstly, we do some research on the cobra. Undoubtedly, it's a powerful software when it comes to simulation
+            and calculation. However, it bases on the Matlab and requires a relatively long time to learn how to use it.
+            And it’s hard to compare two model with each other.
+            <br>
+            After that, we do some more detailed researches on several types of software based on cobra, and most of
+            them have some significant defects. For example, you have to download the whole MatLab to use some of the
+            software. And some of them like CellNetAnalyzer are more friendly for Linux and cannot function well in
+            Windows, which will cause a lot of troubles.
+            <br>
+            <div class="table_show">
+              <table class="table table-striped table-hover text-center table-bordered">
+                <thead>
+                <tr>
+                  <td></td>
+                  <td>CellNetAnalyzer</td>
+                  <td>Cobra</td>
+                  <td>BioSPICE MOMA</td>
+                  <td>MetaFluxNet</td>
+                  <td>PathFluxNet</td>
+                  <td>Fbatool</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Graphical</td>
+                  <td>&#x2714;</td>
+                  <td>&#x2718;</td>
+                  <td>&#x2718;</td>
+                  <td>&#x2714;</td>
+                  <td>&#x2718;</td>
+                  <td>&#x2718;</td>
+                </tr>
+                <tr>
+                  <td>Operating System</td>
+                  <td>Windows</td>
+                  <td>Windows</td>
+                  <td>Windows Linux</td>
+                  <td>Windows</td>
+                  <td>Linux UNIX</td>
+                  <td>Corona</td>
+                </tr>
+                <tr>
+                  <td>Algorithm</td>
+                  <td>MFA SNA</td>
+                  <td>FBA MOMA DFBA FVA</td>
+                  <td>FBA MOMA</td>
+                  <td>MFA</td>
+                  <td>FBA MOMA</td>
+                  <td>FBA</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+            <div class="psgImg">
+              <img alt="" src="../../File/T--USTC-Software--des_compari_2.png">
+              <p>The GUI of CellNetAnalyzer</p>
+            </div>
+            And we have also done some researches on simbiology, a tool in Matlab referred by Yonghao Liang, a senior
+            student in our school. It turns out that it can predict how the concentration of metabolites will change as
+            time goes on. But it can only deal with a few reactions at one time, which can not meet our needs to edit a
+            whole model.
+            <br>
+            <div class="psgImg">
+              <img alt="" src="../../File/T--USTC-Software--des_compari_3.png">
+              <p>One simulation by simbiology</p>
+            </div>
+            <br>
+            Our tool is more user-friendly because you can use it directly online, and you don't need to learn a new
+            programming language. Just a few inputs are required, but you can get a complete analysis!
           </div>
           <h3>Slogan</h3>
           <div class="passage">

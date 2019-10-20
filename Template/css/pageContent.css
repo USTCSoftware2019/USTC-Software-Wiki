@@ -73,3 +73,13 @@
     margin: 0;
     padding: 0;
 }
+/*the table style*/
+.page-content > .card-body .table_show {
+    width: 90%;
+    margin: 1em auto;
+
+}
+.page-content > .card-body .table_show td,
+.page-content > .card-body .table_show th{
+    vertical-align: middle;
+}
