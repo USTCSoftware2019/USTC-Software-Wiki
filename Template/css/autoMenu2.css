@@ -117,6 +117,7 @@
     font-weight: 400;
     color: #4598B5;
     transition: color 150ms ease-in, top 100ms ease-out;
+    font-style: normal;
 }
 .progressbar .holder .labels i:hover::before, .progressbar .holder .labels i:focus::before {
     background-color: #B6D1DA;
