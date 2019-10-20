@@ -32,26 +32,41 @@
           <h4>Flux Balance Analysis</h4>
           <div class="passage">Flux Balance Analysis (FBA) is a mathematical method for simulating metabolism in
             metabolic networks. It is based on linear programming to calculate fluxes when the model is stable.
-            <br>
+            <br><br>
             Assuming S is a matrix, which contains all reactions in a model. In this matrix, metabolites consumed take
             negative coefficients, and metabolites produced then take positive ones. Furthermore, v is a vector that
             represents the flux of all reactions. When the system is steady, it satisfies:
             $$
             \textbf{S}\textbf{v}=0
             $$
-            And then, FBA tries to maximize or minimize the objective function $$\textbf{c}^\textrm{T} \textbf{v}$$, which
+            And then, FBA tries to maximize or minimize the objective function \(\textbf{c}^\textrm{T} \textbf{v}\), which
             c contains the weight of all reactions contributing to the function. Now it is clear that FBA is a linear
             programming problem, and it just works.
+            <div class="psgImg">
+              <img src="../../File/T--USTC-Software--model_fba_banlanced.png" alt="">
+              <p>The conceptual basis of constraint- based modeling. With no constraints, the fIux
+                distribution of a biological network may lie at any point in a solution space. When mass balance
+                constraints imposed by the stoichiometric matrix S (labeled 1) and capacity constraints imposed
+                by the lower and upper bounds (a;and b;) (labeled 2) are applied to a network, it defines an
+                allowable solution space. The network may acquire any flux distribution within this space, but
+                points outside this space are denied by the constraints. Through optimization of an objective
+                function, FBA can identify a single optimal fIux distribution that lies on the edge of the
+                allowable solution space.</p>
+            </div>
           </div>
           <h4>Flux Variability Analysis</h4>
           <div class="passage">
             Flux Variability Analysis (FVA) is an extension of FBA. It can show the minimum and maximum range of each
             reaction flux while they satisfy constraints and have the same optimal objective by solving a double linear
             programming problem.
-            <br>
+            <br><br>
             However, when the metabolic network contains internal loops, the result can be too high in absolute to be
             realistic. Users can select the "loopless" option to avoid such internal loops, and get a more consistent
             result.
+            <div class="psgImg">
+              <img src="../../File/T--USTC-Software--model_analysis.png" alt="">
+              <p>Flux Variability Analysis</p>
+            </div>
           </div>
           <h3>Computer Models</h3>
           <h4>Object-Relational Mapping</h4>
@@ -60,31 +75,53 @@
             gap between object-oriented programming languages and relational databases and avoids the vulnerability of
             SQL Injection.
             <br>
+            <div class="psgImg">
+              <img src="../../File/T--USTC-Software--model_mapping.png" alt="">
+              <p>Object-Relational Mapping</p>
+            </div>
             We use ORM to organize our metabolic networks, biobricks data, and user's computational models. It brings us
             the convenience of creating, querying, listing, and connecting models, with acceptable performance.
             <br>
+            <div class="psgImg">
+              <img src="../../File/T--USTC-Software--model_DB.png" alt="">
+              <p>Relationship between two types of database</p>
+            </div>
             In practice, we use Django ORM with MySQL backend to provide fast, flexible, and reliable service.
+            <br>
+            <div class="psgImg">
+              <img src="../../File/T--USTC-Software--model_django.png" alt="">
+              <p>Django ORM</p>
+            </div>
           </div>
           <h4>Message Queues</h4>
           <div class="passage">
             Our website requires computing large models, and it is quite embarrassing to see users waiting for browsers
             for so long. So we use message queues to maintain computing tasks.
-            <br>
+            <br><br>
             We split our programs computing models from our website, and use message queues to send and receive
             information about our computation. A queue is a data structure that stores things waiting to be handled, and
             it obeys the "First Come, First Serve" principle. So, we can store our computing tasks in the queue, and
             response to users instantly about the progress of his tasks.
             <br>
+            <div class="psgImg">
+              <img src="../../File/T--USTC-Software--model_msg.png" alt="">
+              <p>Message Queues</p>
+            </div>
             In Foresyn, we use RabbitMQ and Celery to build our message queues. Here, Celery uses its protocol to
             communicate with web programs and computation programs. And RabbitMQ acts as a broker who accepts and
             forwards messages of Celery.
+            <br>
+            <div class="psgImg">
+              <img src="../../File/T--USTC-Software--model_rabit.png" alt="">
+              <p>RabbitMQ</p>
+            </div>
           </div>
           <h4>Different Searching Engines</h4>
           <div class="passage">
             When we are developing Foresyn, we discovered that there is a contradiction between speed and accuracy. So
             our strategy is to use slow but accurate algorithm when searching small datasets, and use fast but less
             accurate algorithm when searching large ones.
-            <br>
+            <br><br>
             Here, there are only some models like E. coli, but a lot of genes, reactions and metabolites in our
             database. We choose to calculate Levenshtein distances for model searching. Levenshtein distance defines as
             the following recursive function:
@@ -97,8 +134,8 @@
             \operatorname{lev}_{a,b}(i-1,j-1)) & \text{otherwise.} \\
             \end{cases}
             $$
-            which has a time complexity of $O(nm)$ where n and m are the length of the two strings.
-            <br>
+            which has a time complexity of \(O(nm)\) where n and m are the length of the two strings.
+            <br><br>
             When we are handling genes, reactions and metabolites, we use another algorithm.
           </div>
           <h4>Biobricks Recommendation</h4>
@@ -152,6 +189,9 @@
 <script src="../../Template/js/addBackground.js"></script>
 
 <link href="../../Template/css/pageContent.css" rel="stylesheet">
+
+<!--add figure <index>-->
+<script src="../../Template/js/insertNumForPics.js"></script>
 
 <!-- some updated css style -->
 <!--<style>-->

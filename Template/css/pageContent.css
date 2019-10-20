@@ -54,7 +54,14 @@
 /*the img in the article style*/
 .page-content > .card-body .psgImg img{
     max-height: 380px;
+    max-width: 760px;
     margin: 1em;
+}
+.page-content > .card-body .psgImg p{
+    max-width: 760px;
+    margin: 0 auto;
+    /*word-wrap: break-spaces;*/
+    text-align: justify-all;
 }
 
 /*the reference title style*/
