@@ -36,10 +36,6 @@
     .more > span {display: inline-block; width: 1em; height: 1em; background-image: url('https://2019.igem.org/wiki/images/0/0a/T--USTC-Software--slide_down.svg'); background-position: -18px; background-size: cover; transform: rotate(-90deg); position: relative; top: 5px;}
     .more:hover > span {transform: rotate(0deg);}
     .more > span {transition: all .4s; }
-    @media screen and (max-width: 800px) {
-        .menu {display: none}
-        .menu_icon {display: block; position: absolute; right: 1em}
-    }
     .info_menu_item {font-size: .9em; width: 140px; position: absolute; display: block; border: 1px solid #dddddd; border-radius: 3px; visibility: hidden;opacity: 0; transition: all .3s; }
     .info_menu_item ul {display: flex; flex-direction: column; align-items: center;}
     .info_menu_item li {padding: .3em}
@@ -131,80 +127,11 @@
                     </li> -->
                 </ul>
             </div>
-            <div class="menu_icon" id="menu_icon">
-                <img src="../../File/T--USTC-Software--menu.svg" alt="" srcset="">
-            </div>
         </div>
 
-        <div class="slide_menu" id="slide_menu">
-            <ul class="slide_menu_item">
-                <li class="slide_team_menu more">TEAM<span></span>
-                    <div class="slide_info" id="team_menu_item">
-                        <ul>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Team">Team Members</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Collaborations">Collaborations</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="slide_project_menu more">PROJECT<span></span>
-                    <div class="slide_info" id="project_menu_item">
-                        <ul>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Description">Description</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Design">Design</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Model">Model</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Contribution">Contribution</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/ResultsContribution">Results</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Demonstrate">Demonstrate</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Improve">Improve</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Attributions">Attributions</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <!-- <li class="slide_parts_menu more">PARTS<span></span>
-                    <div class="slide_info" id="parts_menu_item">
-                        <ul>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Parts">Parts</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Basic_Part">Basic Part</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Composite_Part">Composite Part</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Part_Collection">Part Collection</a></li>
-                        </ul>
-                    </div>
-                </li> -->
-                <li><a href="https://2019.igem.org/Team:USTC-Software/Safety">SAFETY</a></li>
-                <li class="slide_human_practice_menu more">HUMAN PRACTICE<span></span>
-                    <div class="slide_info" id="human_practice_menu_item">
-                        <ul>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Human_Practices">Human Practices</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Public_Engagement">Education & Engagement</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="https://2019.igem.org/Team:USTC-Software/Awards">AWARDS</a></li>
-                <!-- <li class="slide_awards_menu more">AWARDS<span></span>
-                    <div class="slide_info" id="awards_menu_item">
-                        <ul>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Entrepreneurship">Entrepreneurship</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Hardware">Hardware</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Measurement">Measurement</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Model">Model</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Plant">Plant</a></li>
-                            <li><a href="https://2019.igem.org/Team:USTC-Software/Software">Software</a></li>
-                        </ul>
-                    </div>
-                </li> -->
-            </ul>
-        </div>
+        
     </nav>
 </div>
 
-<script>
-$('#menu_icon').on('click', function(){
-    console.log('hello');
-    $('#slide_menu').slideToggle(250)
-});
-$('.slide_menu li.more').on('click', function(){
-    $(this).children('div.slide_info').slideToggle(250);
-});
-</script>
 </body>
 </html>

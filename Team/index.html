@@ -126,18 +126,6 @@
     transition: all .4s;
   }
 
-  @media screen and (max-width: 800px) {
-    .menu {
-      display: none
-    }
-
-    .menu_icon {
-      display: block;
-      position: absolute;
-      right: 1em
-    }
-  }
-
   .info_menu_item {
     font-size: .9em;
     width: 140px;
@@ -319,72 +307,12 @@
           </li>
         </ul>
       </div>
-      <div class="menu_icon" id="menu_icon">
-        <img alt="" src="../../File/T--USTC-Software--menu.svg" srcset="">
-      </div>
     </div>
 
-    <div class="slide_menu" id="slide_menu">
-      <ul class="slide_menu_item">
-        <li class="slide_team_menu more">TEAM<span></span>
-          <div class="slide_info" id="team_menu_item">
-            <ul>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Team">Team Members</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Collaborations">Collaborations</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="slide_project_menu more">PROJECT<span></span>
-          <div class="slide_info" id="project_menu_item">
-            <ul>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Description">Description</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Design">Design</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Experiments">Experiments</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Notebook">Notebook</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Contribution">Contribution</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/ResultsContribution">Results</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Demonstrate">Demonstrate</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Improve">Improve</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Attributions">Attributions</a></li>
-            </ul>
-          </div>
-        </li>
-        <li>SAFETY</li>
-        <li class="slide_human_practice_menu more">HUMAN PRACTICE<span></span>
-          <div class="slide_info" id="human_practice_menu_item">
-            <ul>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Human_Practices">Human Practices</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Education">Education</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Public_Engagement">Engagement</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="slide_awards_menu more">AWARDS<span></span>
-          <div class="slide_info" id="awards_menu_item">
-            <ul>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Entrepreneurship">Entrepreneurship</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Hardware">Hardware</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Measurement">Measurement</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Model">Model</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Plant">Plant</a></li>
-              <li><a href="https://2019.igem.org/Team:USTC-Software/Software">Software</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
+    
   </nav>
 </div>
 
-<script>
-    $('#menu_icon').on('click', function () {
-        console.log('hello');
-        $('#slide_menu').slideToggle(250)
-    });
-    $('.slide_menu li.more').on('click', function () {
-        $(this).children('div.slide_info').slideToggle(250);
-    });
-</script>
 <div class="next">
   <img alt="" src="../File/T--USTC-Software--arrow_down.svg">
 </div>
