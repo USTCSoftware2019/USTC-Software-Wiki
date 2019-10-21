@@ -22,7 +22,7 @@
     padding: 0 !important;
     height: 100% !important;
   }
-  
+
   li.menu_item {
     font-family: alegreya !important;
     font-weight: 600;
@@ -250,6 +250,8 @@
   }
 
 </style>
+<div id="img" style="position: absolute; z-index: -99; top: 0; left: 0;"></div>
+<div id="mask" style="position: absolute; z-index: -98; top: 0; left: 0; background: white; display: none;"></div>
 <div class="container">
   <nav class="header">
     <div class="top_menu">
@@ -577,16 +579,22 @@
   }
 
   body {
-    background: url("../File/T--USTC-Software--WEB.svg") center no-repeat;
-    background-size: cover;
     height: 98vh;
+    /* transition: background-image 0.5s linear; */
+  }
+
+  #img {
+    background-image: url("../File/T--USTC-Software--WEB.svg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
   }
 </style>
 <script>
     let page1IsShow = true;
     let timer = setInterval(function () {
         if (page1IsShow) {
-            $(".next").animate({
+          $(".next").animate({
                 "opacity": ".2",
                 "bottom": "5px"
             }, 500, function () {
@@ -610,23 +618,31 @@
     }, 1500);
 
     $(".next").on("click", function () {
-        $(".page1").fadeToggle();
-        $(".page2").fadeToggle();
         changeBg();
         changeArrow();
     });
 
     function changeBg() {
         if (page1IsShow) {
-            $("body").css({
-                "background-image": "url(../File/T--USTC-Software--web2.svg)",
-                // "background-size": "cover",
+            $(".page1").fadeOut(500, function() {
+              $('#mask').css({height: $(window).height(), width: $(window).width()})
+                .fadeIn('slow', function(){
+                    $('#img').css('background-image', "url(../File/T--USTC-Software--web2.svg)");
+                    $('#mask').fadeOut('slow', function() {
+                      $(".page2").fadeIn();
+                    });
+                });
             });
             page1IsShow = false;
         } else {
-            $("body").css({
-                "background-image": "url(../File/T--USTC-Software--WEB.svg)",
-                // "background-size": "cover",
+            $(".page2").fadeOut(500, function() {
+              $('#mask').css({height: $(window).height(), width: $(window).width()})
+                .fadeIn('slow', function(){
+                    $('#img').css('background-image', "url(../File/T--USTC-Software--WEB.svg)");
+                    $('#mask').fadeOut('slow', function() {
+                      $(".page1").fadeIn();
+                    });
+                });
             });
             page1IsShow = true;
         }
