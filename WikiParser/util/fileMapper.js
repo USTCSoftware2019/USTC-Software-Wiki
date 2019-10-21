@@ -8,7 +8,7 @@ let initUrlParam = {
     user: 'ZsStrike'
 };
 
-let users = ['ZsStrike', 'yuriko'];
+let users = ['ZsStrike', 'yuriko', 'Jarvis_ustc'];
 
 // function getMapper(url = initUrl, urlParam  = initUrlParam){
 //     // console.log('test getMapper1');
