@@ -15,6 +15,7 @@
     font-size: 18px;
     padding: 3em;
     font-family: ubuntu, serif  !important;
+    z-index: 0 !important;
 }
 /* the article title style */
 .page-content > .card-body h1{
